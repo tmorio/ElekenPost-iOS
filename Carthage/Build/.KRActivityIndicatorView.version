@@ -1,0 +1,9 @@
+{
+  "commitish" : "2.2.0",
+  "iOS" : [
+    {
+      "name" : "KRActivityIndicatorView",
+      "hash" : "fc447bb3a6c493c18e959f1dc6ecce32fb2f1836761322aa25694089b50f5082"
+    }
+  ]
+}

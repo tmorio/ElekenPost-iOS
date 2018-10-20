@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="ufe-vC-DZo">
+                                <rect key="frame" x="132" y="343" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ufe-vC-DZo" secondAttribute="height" multiplier="1:1" id="3Fa-gF-deb"/>
+                                    <constraint firstAttribute="width" constant="150" id="KzD-eu-hmr"/>
+                                    <constraint firstAttribute="height" constant="150" id="rD2-V7-aOl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developed by MoritoWorks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1t-l6-pdy">
+                                <rect key="frame" x="114.5" y="834" width="185" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ElekenPost" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Ids-yT-kmj">
+                                <rect key="frame" x="0.0" y="502" width="414" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ver 1.0 for iOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6K-53-UYK">
+                                <rect key="frame" x="0.0" y="550" width="414" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beta Edition" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2I8-c2-8wc">
+                                <rect key="frame" x="0.0" y="818" width="414" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="k1t-l6-pdy" firstAttribute="top" secondItem="2I8-c2-8wc" secondAttribute="bottom" id="0zY-um-AKt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="k1t-l6-pdy" secondAttribute="bottom" constant="10" id="11d-Fx-GGY"/>
+                            <constraint firstItem="P6K-53-UYK" firstAttribute="top" secondItem="Ids-yT-kmj" secondAttribute="bottom" id="1r9-lJ-b7l"/>
+                            <constraint firstItem="ufe-vC-DZo" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-30" id="8ga-5h-t3v"/>
+                            <constraint firstItem="2I8-c2-8wc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9tQ-Xp-SHb"/>
+                            <constraint firstItem="P6K-53-UYK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="AVK-h5-0Kj"/>
+                            <constraint firstItem="Ids-yT-kmj" firstAttribute="top" secondItem="ufe-vC-DZo" secondAttribute="bottom" constant="9" id="HR2-mn-cWm"/>
+                            <constraint firstItem="k1t-l6-pdy" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="UKI-Mv-idj"/>
+                            <constraint firstItem="2I8-c2-8wc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WVK-Ne-R4z"/>
+                            <constraint firstItem="P6K-53-UYK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="X7g-Dw-7dg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ids-yT-kmj" secondAttribute="trailing" id="b87-OM-VLa"/>
+                            <constraint firstItem="ufe-vC-DZo" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="qxg-O3-FBU"/>
+                            <constraint firstItem="Ids-yT-kmj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vlm-kK-KcH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50.625" y="373.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LaunchIcon.png" width="228" height="228"/>
+    </resources>
+</document>

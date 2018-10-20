@@ -1,0 +1,3 @@
+github "Moya/Moya"
+github "jdg/MBProgressHUD" ~> 1.1.0
+github "Krimpedance/KRProgressHUD"

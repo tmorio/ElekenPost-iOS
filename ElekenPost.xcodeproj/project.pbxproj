@@ -1,0 +1,661 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E0A4C6C2163AFA40000D54B /* KRActivityIndicatorView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0A4C6A2163AFA40000D54B /* KRActivityIndicatorView.framework */; };
+		8E0A4C6D2163AFA40000D54B /* KRProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0A4C6B2163AFA40000D54B /* KRProgressHUD.framework */; };
+		8E3784DF2163BCD400516850 /* CheckReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3784DE2163BCD400516850 /* CheckReachability.swift */; };
+		8EE0B036216302FD00F07BFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE0B035216302FD00F07BFA /* AppDelegate.swift */; };
+		8EE0B038216302FD00F07BFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE0B037216302FD00F07BFA /* ViewController.swift */; };
+		8EE0B03B216302FD00F07BFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EE0B039216302FD00F07BFA /* Main.storyboard */; };
+		8EE0B03D216302FE00F07BFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EE0B03C216302FE00F07BFA /* Assets.xcassets */; };
+		8EE0B040216302FE00F07BFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EE0B03E216302FE00F07BFA /* LaunchScreen.storyboard */; };
+		8EE0B04B216302FF00F07BFA /* ElekenPostTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE0B04A216302FF00F07BFA /* ElekenPostTests.swift */; };
+		8EE0B056216302FF00F07BFA /* ElekenPostUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE0B055216302FF00F07BFA /* ElekenPostUITests.swift */; };
+		8EE0B0662163069000F07BFA /* LaunchIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EE0B0652163069000F07BFA /* LaunchIcon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8EE0B047216302FF00F07BFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EE0B02A216302FD00F07BFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EE0B031216302FD00F07BFA;
+			remoteInfo = ElekenPost;
+		};
+		8EE0B052216302FF00F07BFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EE0B02A216302FD00F07BFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EE0B031216302FD00F07BFA;
+			remoteInfo = ElekenPost;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8E0A4C6A2163AFA40000D54B /* KRActivityIndicatorView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KRActivityIndicatorView.framework; path = Carthage/Build/iOS/KRActivityIndicatorView.framework; sourceTree = "<group>"; };
+		8E0A4C6B2163AFA40000D54B /* KRProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KRProgressHUD.framework; path = Carthage/Build/iOS/KRProgressHUD.framework; sourceTree = "<group>"; };
+		8E3784DE2163BCD400516850 /* CheckReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckReachability.swift; sourceTree = "<group>"; };
+		8E79AB2F21649CAC0035EFF2 /* ElekenPost.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ElekenPost.entitlements; sourceTree = "<group>"; };
+		8EE0B032216302FD00F07BFA /* ElekenPost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElekenPost.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EE0B035216302FD00F07BFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8EE0B037216302FD00F07BFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8EE0B03A216302FD00F07BFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8EE0B03C216302FE00F07BFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8EE0B03F216302FE00F07BFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8EE0B041216302FE00F07BFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EE0B046216302FF00F07BFA /* ElekenPostTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElekenPostTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EE0B04A216302FF00F07BFA /* ElekenPostTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElekenPostTests.swift; sourceTree = "<group>"; };
+		8EE0B04C216302FF00F07BFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EE0B051216302FF00F07BFA /* ElekenPostUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElekenPostUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EE0B055216302FF00F07BFA /* ElekenPostUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElekenPostUITests.swift; sourceTree = "<group>"; };
+		8EE0B057216302FF00F07BFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EE0B0652163069000F07BFA /* LaunchIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchIcon.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8EE0B02F216302FD00F07BFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E0A4C6C2163AFA40000D54B /* KRActivityIndicatorView.framework in Frameworks */,
+				8E0A4C6D2163AFA40000D54B /* KRProgressHUD.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EE0B043216302FF00F07BFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EE0B04E216302FF00F07BFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8EE0B029216302FD00F07BFA = {
+			isa = PBXGroup;
+			children = (
+				8EE0B034216302FD00F07BFA /* ElekenPost */,
+				8EE0B049216302FF00F07BFA /* ElekenPostTests */,
+				8EE0B054216302FF00F07BFA /* ElekenPostUITests */,
+				8EE0B033216302FD00F07BFA /* Products */,
+				8EE0B0672163108D00F07BFA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8EE0B033216302FD00F07BFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8EE0B032216302FD00F07BFA /* ElekenPost.app */,
+				8EE0B046216302FF00F07BFA /* ElekenPostTests.xctest */,
+				8EE0B051216302FF00F07BFA /* ElekenPostUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8EE0B034216302FD00F07BFA /* ElekenPost */ = {
+			isa = PBXGroup;
+			children = (
+				8E79AB2F21649CAC0035EFF2 /* ElekenPost.entitlements */,
+				8EE0B0652163069000F07BFA /* LaunchIcon.png */,
+				8EE0B035216302FD00F07BFA /* AppDelegate.swift */,
+				8EE0B037216302FD00F07BFA /* ViewController.swift */,
+				8EE0B039216302FD00F07BFA /* Main.storyboard */,
+				8EE0B03C216302FE00F07BFA /* Assets.xcassets */,
+				8EE0B03E216302FE00F07BFA /* LaunchScreen.storyboard */,
+				8EE0B041216302FE00F07BFA /* Info.plist */,
+				8E3784DE2163BCD400516850 /* CheckReachability.swift */,
+			);
+			path = ElekenPost;
+			sourceTree = "<group>";
+		};
+		8EE0B049216302FF00F07BFA /* ElekenPostTests */ = {
+			isa = PBXGroup;
+			children = (
+				8EE0B04A216302FF00F07BFA /* ElekenPostTests.swift */,
+				8EE0B04C216302FF00F07BFA /* Info.plist */,
+			);
+			path = ElekenPostTests;
+			sourceTree = "<group>";
+		};
+		8EE0B054216302FF00F07BFA /* ElekenPostUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8EE0B055216302FF00F07BFA /* ElekenPostUITests.swift */,
+				8EE0B057216302FF00F07BFA /* Info.plist */,
+			);
+			path = ElekenPostUITests;
+			sourceTree = "<group>";
+		};
+		8EE0B0672163108D00F07BFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E0A4C6A2163AFA40000D54B /* KRActivityIndicatorView.framework */,
+				8E0A4C6B2163AFA40000D54B /* KRProgressHUD.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8EE0B031216302FD00F07BFA /* ElekenPost */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EE0B05A216302FF00F07BFA /* Build configuration list for PBXNativeTarget "ElekenPost" */;
+			buildPhases = (
+				8EE0B02E216302FD00F07BFA /* Sources */,
+				8EE0B02F216302FD00F07BFA /* Frameworks */,
+				8EE0B030216302FD00F07BFA /* Resources */,
+				8EE0B06C216310AA00F07BFA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ElekenPost;
+			productName = ElekenPost;
+			productReference = 8EE0B032216302FD00F07BFA /* ElekenPost.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8EE0B045216302FF00F07BFA /* ElekenPostTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EE0B05D216302FF00F07BFA /* Build configuration list for PBXNativeTarget "ElekenPostTests" */;
+			buildPhases = (
+				8EE0B042216302FF00F07BFA /* Sources */,
+				8EE0B043216302FF00F07BFA /* Frameworks */,
+				8EE0B044216302FF00F07BFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8EE0B048216302FF00F07BFA /* PBXTargetDependency */,
+			);
+			name = ElekenPostTests;
+			productName = ElekenPostTests;
+			productReference = 8EE0B046216302FF00F07BFA /* ElekenPostTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8EE0B050216302FF00F07BFA /* ElekenPostUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EE0B060216302FF00F07BFA /* Build configuration list for PBXNativeTarget "ElekenPostUITests" */;
+			buildPhases = (
+				8EE0B04D216302FF00F07BFA /* Sources */,
+				8EE0B04E216302FF00F07BFA /* Frameworks */,
+				8EE0B04F216302FF00F07BFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8EE0B053216302FF00F07BFA /* PBXTargetDependency */,
+			);
+			name = ElekenPostUITests;
+			productName = ElekenPostUITests;
+			productReference = 8EE0B051216302FF00F07BFA /* ElekenPostUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8EE0B02A216302FD00F07BFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Takenori Morio";
+				TargetAttributes = {
+					8EE0B031216302FD00F07BFA = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+						};
+					};
+					8EE0B045216302FF00F07BFA = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 8EE0B031216302FD00F07BFA;
+					};
+					8EE0B050216302FF00F07BFA = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 8EE0B031216302FD00F07BFA;
+					};
+				};
+			};
+			buildConfigurationList = 8EE0B02D216302FD00F07BFA /* Build configuration list for PBXProject "ElekenPost" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8EE0B029216302FD00F07BFA;
+			productRefGroup = 8EE0B033216302FD00F07BFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8EE0B031216302FD00F07BFA /* ElekenPost */,
+				8EE0B045216302FF00F07BFA /* ElekenPostTests */,
+				8EE0B050216302FF00F07BFA /* ElekenPostUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8EE0B030216302FD00F07BFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EE0B040216302FE00F07BFA /* LaunchScreen.storyboard in Resources */,
+				8EE0B0662163069000F07BFA /* LaunchIcon.png in Resources */,
+				8EE0B03D216302FE00F07BFA /* Assets.xcassets in Resources */,
+				8EE0B03B216302FD00F07BFA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EE0B044216302FF00F07BFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EE0B04F216302FF00F07BFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8EE0B06C216310AA00F07BFA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/KRActivityIndicatorView.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/KRProgressHUD.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8EE0B02E216302FD00F07BFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EE0B038216302FD00F07BFA /* ViewController.swift in Sources */,
+				8E3784DF2163BCD400516850 /* CheckReachability.swift in Sources */,
+				8EE0B036216302FD00F07BFA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EE0B042216302FF00F07BFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EE0B04B216302FF00F07BFA /* ElekenPostTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EE0B04D216302FF00F07BFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EE0B056216302FF00F07BFA /* ElekenPostUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8EE0B048216302FF00F07BFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EE0B031216302FD00F07BFA /* ElekenPost */;
+			targetProxy = 8EE0B047216302FF00F07BFA /* PBXContainerItemProxy */;
+		};
+		8EE0B053216302FF00F07BFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EE0B031216302FD00F07BFA /* ElekenPost */;
+			targetProxy = 8EE0B052216302FF00F07BFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8EE0B039216302FD00F07BFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8EE0B03A216302FD00F07BFA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8EE0B03E216302FE00F07BFA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8EE0B03F216302FE00F07BFA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8EE0B058216302FF00F07BFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8EE0B059216302FF00F07BFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8EE0B05B216302FF00F07BFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FPT82553L8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ElekenPost/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moritoworks.ElekenPost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8EE0B05C216302FF00F07BFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FPT82553L8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ElekenPost/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moritoworks.ElekenPost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8EE0B05E216302FF00F07BFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FPT82553L8;
+				INFOPLIST_FILE = ElekenPostTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moritoworks.ElekenPostTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ElekenPost.app/ElekenPost";
+			};
+			name = Debug;
+		};
+		8EE0B05F216302FF00F07BFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FPT82553L8;
+				INFOPLIST_FILE = ElekenPostTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moritoworks.ElekenPostTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ElekenPost.app/ElekenPost";
+			};
+			name = Release;
+		};
+		8EE0B061216302FF00F07BFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FPT82553L8;
+				INFOPLIST_FILE = ElekenPostUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moritoworks.ElekenPostUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ElekenPost;
+			};
+			name = Debug;
+		};
+		8EE0B062216302FF00F07BFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FPT82553L8;
+				INFOPLIST_FILE = ElekenPostUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moritoworks.ElekenPostUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ElekenPost;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8EE0B02D216302FD00F07BFA /* Build configuration list for PBXProject "ElekenPost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EE0B058216302FF00F07BFA /* Debug */,
+				8EE0B059216302FF00F07BFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EE0B05A216302FF00F07BFA /* Build configuration list for PBXNativeTarget "ElekenPost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EE0B05B216302FF00F07BFA /* Debug */,
+				8EE0B05C216302FF00F07BFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EE0B05D216302FF00F07BFA /* Build configuration list for PBXNativeTarget "ElekenPostTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EE0B05E216302FF00F07BFA /* Debug */,
+				8EE0B05F216302FF00F07BFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EE0B060216302FF00F07BFA /* Build configuration list for PBXNativeTarget "ElekenPostUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EE0B061216302FF00F07BFA /* Debug */,
+				8EE0B062216302FF00F07BFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8EE0B02A216302FD00F07BFA /* Project object */;
+}
